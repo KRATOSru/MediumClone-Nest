@@ -11,3 +11,10 @@ export class UserController {
     return this.userService.createUser(createUserDto)
   }
 }
+// export class UserController {
+//   constructor(private readonly userService: UserService) {}
+//   @Post('users')
+//   async createUser(@Body('user') createUserDto: CreateUserDto): Promise<UserEntity> {
+//     return this.userService.createUser(createUserDto)
+//   }
+// }
