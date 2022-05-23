@@ -19,7 +19,7 @@ export class UserService {
     return await this.userRepository.save(newUser)
   }
 
-  generateJwt(user: UserEntity): string {
+  generateJwt(user: UserEntity): string { //string not String(mistake)
     return sign(
       {
         id: user.id,
